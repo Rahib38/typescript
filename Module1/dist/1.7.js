@@ -7,3 +7,7 @@ var greetfriends = function () {
     friends.forEach(function (friend) { return console.log("Hi ".concat(friends)); });
 };
 greetfriends("abdul", "habul");
+var bros1 = ["nadim", "nadim", "mamun"];
+var bros2 = ["Rohim", "korim", "mujahid"];
+bros1.push.apply(bros1, bros2);
+console.log(bros1);
