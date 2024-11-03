@@ -20,4 +20,15 @@
       age: 110,
     },
   ];
+
+  //   Generices use to tuple
+
+  type GenericesTuple<x, y> = [x, y];
+
+  const manus: GenericesTuple<string, string> = ["mr x", "mr y"];
+
+  const userWithId: GenericesTuple<number, { name: string; email: string }> = [
+    1234,
+    { name: "korim", email: "a@gmail.com" },
+  ];
 }
