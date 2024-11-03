@@ -9,12 +9,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 {
-    // promise
-    // simulate
     const getToDo = () => __awaiter(void 0, void 0, void 0, function* () {
         const response = yield fetch("https://jsonplaceholder.typicode.com/todos/1");
         const data = yield response.json();
-        console.log(data);
+        // console.log(data);
+        return data;
     });
     getToDo();
     const createPromise = () => {
